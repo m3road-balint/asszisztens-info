@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adatkezelési tájékoztató</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #57606a; --link: #0969da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #8d96a0; --link: #4493f8; }
+  }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif;
+         max-width: 42rem; margin: 0 auto; padding: 2rem 1rem; }
+  a { color: var(--link); }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<h1>Adatkezelési tájékoztató — Személyi asszisztens</h1>
+<p class="muted">Hatályos: 2026. október 22.</p>
+
+<p>Ez az alkalmazás egyetlen magánszemély (a tulajdonos) saját használatára készült. Kizárólag
+a tulajdonos saját fiókjaihoz fér hozzá, az ő kifejezett engedélyével.</p>
+
+<h2>Milyen adatokhoz fér hozzá</h2>
+<ul>
+  <li><strong>Gmail</strong> — csak olvasási joggal (<code>gmail.readonly</code>): levelek fejléce
+      és szövege. Levelet nem küld, nem töröl, nem módosít.</li>
+  <li><strong>Google Naptár</strong> — csak olvasási joggal (<code>calendar.readonly</code>):
+      események időpontja, címe, helye, résztvevői.</li>
+</ul>
+
+<h2>Mire használja</h2>
+<p>Kizárólag arra, hogy a tulajdonos számára összefoglalót és értesítést készítsen: napi és heti
+áttekintést, jelzést a válaszra váró levelekről és a közelgő megbeszélésekről.</p>
+
+<h2>Hol tárolja, kinek adja át</h2>
+<ul>
+  <li>Az adatokat a tulajdonos saját számítógépén tárolja.</li>
+  <li>Az összefoglaláshoz a levelek fejléce és a szöveg rövidített eleje az Anthropic Claude
+      API-jához kerül feldolgozásra. Csatolmány nem kerül át.</li>
+  <li>Az értesítések a Telegramon keresztül, a tulajdonos saját csevegésébe érkeznek.</li>
+  <li>Az adatokat nem adja el, nem használja hirdetésre, és harmadik félnek ezen túl nem adja át.</li>
+</ul>
+
+<h2>Google API-szolgáltatások</h2>
+<p>Az alkalmazás a Google API-któl kapott adatokat a
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+User Data Policy</a> szerint kezeli, a „Limited Use” követelményeket is beleértve.</p>
+
+<h2>Hozzáférés visszavonása, törlés</h2>
+<p>A hozzáférés bármikor visszavonható a
+<a href="https://myaccount.google.com/permissions">Google-fiók engedélyei</a> között. A helyben
+tárolt adatokat a tulajdonos bármikor törölheti.</p>
+
+<hr>
+
+<h1 id="en" lang="en">Privacy policy — Personal assistant</h1>
+<div lang="en">
+<p class="muted">Effective: October 22, 2026.</p>
+<p>This application is built for the sole personal use of one individual (the owner). It accesses
+only the owner's own accounts, with the owner's explicit consent.</p>
+<ul>
+  <li><strong>Data accessed:</strong> Gmail, read-only (<code>gmail.readonly</code>): message headers and
+      bodies. Google Calendar, read-only (<code>calendar.readonly</code>): event times, titles,
+      locations and attendees. The app never sends, deletes or modifies anything.</li>
+  <li><strong>Purpose:</strong> only to produce summaries and notifications for the owner.</li>
+  <li><strong>Storage and sharing:</strong> the data is stored on the owner's own computer. For
+      summarisation, message headers and a truncated part of the body are processed by Anthropic's
+      Claude API. Attachments are never sent. Notifications are delivered to the owner's own chat
+      via Telegram. The data is not sold, not used for advertising, and not shared with anyone else.</li>
+  <li><strong>Google API Services:</strong> the use of information received from Google APIs adheres to
+      the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+      User Data Policy</a>, including the Limited Use requirements.</li>
+  <li><strong>Revoking access:</strong> at any time under
+      <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
+</ul>
+</div>
+</body>
+</html>
